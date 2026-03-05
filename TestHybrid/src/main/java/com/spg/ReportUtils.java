@@ -24,7 +24,7 @@ public class ReportUtils {
 		String reportPath = "C:\\Project_Report\\WEB";
 		createFolder(reportPath);
 		reporter=new ExtentSparkReporter(reportPath+"Today_Report"+WebContants.browser+RandomDate()+".html");
-		reporter.config().setDocumentTitle("SpinMatch");
+		reporter.config().setDocumentTitle("Extent_Report");
 		report=new ExtentReports();
 		report.attachReporter(reporter);
 		report.flush();

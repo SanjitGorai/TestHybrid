@@ -31,6 +31,10 @@ public class BaseTest extends ReportUtils  {
 	/* for Open The browser */
 	@BeforeMethod
 	public void lunchWeb() {
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 		if(WebContants.browser.contains("chrome")) {
 			driver=new ChromeDriver();
 		}
@@ -43,8 +47,7 @@ public class BaseTest extends ReportUtils  {
 		else {
 			throw new IllegalArgumentException("Invalid browser type: "+WebContants.browser);
 		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 	}
 	/* for Close all browser */
 	

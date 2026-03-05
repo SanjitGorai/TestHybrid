@@ -19,6 +19,8 @@ public class LoginApplication extends BaseTest{
 			  
 			loginpages=new LoginPagess(driver);
 			evenUtils=new EvenUtils(driver);
+			
+			
 			evenUtils.navigateToUrl(WebContants.OrangeHRM_url);
 			String OrangeHRM_User = evenUtils.getData("OrangeHRM_UserName");
 			String OrangeHRM_Pass = evenUtils.getData("OrangeHRM_Password");
