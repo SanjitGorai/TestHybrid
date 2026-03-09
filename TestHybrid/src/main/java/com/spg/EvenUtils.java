@@ -240,7 +240,6 @@ public class EvenUtils {
 	}
 	
 	
-	
 	public void ScrollIntoView(WebElement element) {
 		
 		 driver.executeScript("arguments[0].scrollIntoView(true);", element);
