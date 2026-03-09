@@ -11,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -29,6 +30,8 @@ public class EvenUtils {
 		this.driver=driver;
 	}
 	
+	
+	
 	public void clickOnElement(WebElement ele) {
 		reportUtils=new ReportUtils();
 		try {
@@ -38,6 +41,10 @@ public class EvenUtils {
 		//	reportUtils.logStatus("Warning", "User  unable to click on ");
 		}
 	} 
+	
+	/* enter the value
+	 * @ Sanjit
+	 */
 		public void sendValue(WebElement ele,String element) {
 			try {
 				ele.sendKeys(element);
@@ -138,7 +145,7 @@ public class EvenUtils {
 	
 
 	public String getData(String value) throws Exception {
-		FileInputStream fs=new FileInputStream("C:\\Users\\Sanjit\\eclipse-workspace\\TestHybrid\\crediantial.properties");
+		FileInputStream fs=new FileInputStream("C:\\Users\\Sanjit\\git\\repository4\\TestHybrid\\crediantial.properties");
 		Properties p=new Properties();
 		p.load(fs);
 		return p.getProperty(value);

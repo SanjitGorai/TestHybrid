@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.OrangeHRM.LoginApplication">
+      <class name="com.OrangeHRM.LoginZconnet">
         <methods>
-          <include name="KillBrowser"/>
           <include name="intializationReportConfig"/>
           <include name="startReport"/>
           <include name="lunchWeb"/>
           <include name="KillReport"/>
-          <include name="LoginToTheApplication"/>
+          <include name="loginTotheZconnect"/>
         </methods>
-      </class> <!-- com.OrangeHRM.LoginApplication -->
+      </class> <!-- com.OrangeHRM.LoginZconnet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
