@@ -49,7 +49,7 @@ public class BaseTest extends ReportUtils  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 	}
-	/* for Close all browser 
+	/* for Close all browser */
 	
 	 @AfterMethod 
 	 public void KillBrowser() {

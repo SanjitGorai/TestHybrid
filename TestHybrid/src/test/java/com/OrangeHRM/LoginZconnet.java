@@ -15,20 +15,20 @@ public class LoginZconnet extends BaseTest{
 	@Test
 	public void loginTotheZconnect() throws Exception {
 
-		eveUtils=new EvenUtils(driver);
-		zlogin=new ZconnectLoginPage(driver);
-		
+		EvenUtils	eveUtils= new EvenUtils(driver);
+		ZconnectLoginPage zlogin=new ZconnectLoginPage(driver);
 		eveUtils.navigateToUrl(WebContants.Zconnect_url);
-	
-		String username = eveUtils.getData("Zconnect_Usertname");
+		String username = eveUtils.getData("Zconnect_Username");
 		String password = eveUtils.getData("Zconnect_Password");
 		System.out.println(username  +"  "+password );
 		eveUtils.sendValue(zlogin.Zconnect_UserNameField, username);
 		eveUtils.sendValue(zlogin.Zconnect_PasswordField, password);
-		eveUtils.clickOnElement(zlogin.Zconnect_LoginButton, "Zconnect Login button");
+		eveUtils.clickOnElement(zlogin.Zconnect_LoginButton, "Z connect login button" );
 		
 	}
 	
-	
+	public void LogintoUrja() {
+		eveUtils.na
+	}
 
 }
